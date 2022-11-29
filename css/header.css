@@ -1,0 +1,119 @@
+@import './index.css';
+
+header {
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+.header-logo__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-score, .level-score {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+@media(max-width: 700px) {
+    .header-logo__box {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 48px;
+    color: #33CCCC;
+}
+
+nav {
+    margin: 10px 0px 0px 0px;
+}
+
+.nav-films__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(51, 204, 204, 0.5);
+    border: 2px solid #67ABF3;
+    box-shadow: 17px 23px 36px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.film-elem {
+    color: white;
+    width: 25%;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.film-elem:nth-child(1) {
+    border-radius: 8px 0px 0px 8px;
+    -webkit-border-radius: 8px 0px 0px 8px;
+    -moz-border-radius: 8px 0px 0px 8px;
+    -ms-border-radius: 8px 0px 0px 8px;
+    -o-border-radius: 8px 0px 0px 8px;
+}
+
+.film-elem:nth-last-child(1) {
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 560px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-films__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .film-elem {
+        color: white;
+        width: 30%;
+        border-radius: 8px 8px 8px 8px;
+    }
+
+    .film-elem:nth-child(1) {
+        border-radius: 8px 8px 8px 8px;
+        -webkit-border-radius: 8px 8px 8px 8px;
+        -moz-border-radius: 8px 8px 8px 8px;
+        -ms-border-radius: 8px 8px 8px 8px;
+        -o-border-radius: 8px 8px 8px 8px;
+    }
+
+    .film-elem:nth-last-child(1) {
+        border-radius: 8px 8px 8px 8px;
+        -webkit-border-radius: 8px 8px 8px 8px;
+        -moz-border-radius: 8px 8px 8px 8px;
+        -ms-border-radius: 8px 8px 8px 8px;
+        -o-border-radius: 8px 8px 8px 8px;
+    }
+}
+
+.active {
+    background: #33CCCC;
+}

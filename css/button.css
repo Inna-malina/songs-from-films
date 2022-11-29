@@ -1,0 +1,16 @@
+@import './index.css';
+
+.button{
+    cursor: pointer;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.26);
+    border: 2px solid #67ABF3;
+    box-shadow: 17px 23px 36px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    text-align: center; 
+}

@@ -1,0 +1,24 @@
+@import './melody-list-box.css';
+
+.melody-list__description {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.26);
+  border: 2px solid #67ABF3;
+  box-shadow: 17px 23px 36px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (max-width: 1125px){
+  .melody-list__description {
+    width: 100%;
+  }
+}

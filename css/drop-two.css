@@ -1,0 +1,17 @@
+@import './index.css';
+
+.drop-two__box{
+    position: absolute;
+    /* overflow: hidden; */
+    width: 38%;
+    height: 85%;
+    top: 13%;
+    left: -7%;
+}
+
+.drop-two{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+}

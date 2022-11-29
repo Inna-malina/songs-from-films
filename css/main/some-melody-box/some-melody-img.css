@@ -1,0 +1,57 @@
+@import './some-melody-box.css';
+
+.some-melody__img {
+    width: 150px;
+    height: 150px;
+    background: url('../../../assets/images/some-melody-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+@media (max-width: 560px) {
+    .some-melody__img {
+        width: 83px;
+        height: 83px;
+    }
+}
+
+@media (max-width: 430px) {
+    .some-melody__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+}
+}
+
+.playing {
+    -webkit-animation: playRotate 6s infinite forwards linear;
+    animation: playRotate 6s infinite forwards linear;
+}
+
+@-webkit-keyframes playRotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+@keyframes playRotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../css/index.css';
+@import './some-melody-img.css';
+@import './some-melody-description.css';
+@import './some-melody-media.css';
+
+.main-some-melody__box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.26);
+    border: 2px solid #67ABF3;
+    box-shadow: 17px 23px 36px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+@media (max-width: 430px){
+    .main-some-melody__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

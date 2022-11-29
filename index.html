@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Songs of Films</title>
+</head>
+
+<body>
+  <div class="wrapper-background">
+    <div class="start-wrapper ">
+      <div class="curtain__block">
+        <div class="left-element"></div>
+        <div class="right-element"></div>
+      </div>
+      <div class="title__box">
+        <h2 class="title-start">Песни из фильмов</h2>
+        <button class="btn-start">Начать викторину</button>
+      </div>
+
+    </div>
+    <div class="finish-wrapper wrapper-hidden">
+      <div class="curtain__block">
+        <div class="left-element-finish"></div>
+        <div class="right-element-finish"></div>
+      </div>
+      <div class="title__box">
+        <h2 class="title-finish">Ваш счёт: <span></span></h2>
+        <button class="btn-finish">Сыграем ещё раз?</button>
+      </div>
+
+    </div>
+
+    <div class="wrapper wrapper-hidden">
+      <header>
+        <div class="center">
+          <div class="header-logo__box">
+            <div class="logo">
+              Songs of Films
+            </div>
+            <div class="total-score">Общий счёт: <span></span></div>
+            <div class="level-score">Счёт за уровень: <span></span></div>
+          </div>
+          <nav>
+            <ul class="nav-films__box">
+              <li class="film-elem level-zero active">Уровень 0</li>
+              <li class="film-elem level-one">Уровень 1</li>
+              <li class="film-elem level-two">Уровень 2</li>
+              <li class="film-elem level-three">Уровень 3</li>
+              <li class="film-elem level-four">Уровень 4</li>
+              <li class="film-elem level-five">Уровень 5</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="center">
+        <main>
+          <section class="main-some-melody__box">
+            <div class="some-melody__img"></div>
+            <div class="some-melody__description">
+              <div class="some-melody__level-name">
+                Угадай мелодию из мультфильма
+              </div>
+              <div class="some-melody__hidden">
+                * * * * * *
+              </div>
+              <div class="some-melody__name hidden-name">
+              </div>
+
+              <div class="some-melody__media-box">
+                <div class="player">
+                  <div class="player-control">
+                    <i class="fas fa-play play-pause"></i>
+                  </div>
+                  <div class="player-range__box">
+                    <div class="player-range">
+                      <input type="range" />
+                      <div></div>
+                    </div>
+                    <div class="timer__box">
+                      <span>start</span>
+                      <span>end</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sound-control">
+                  <i class="fas fa-volume-down"></i>
+                  <input type="range" max="100" step="1" />
+                  <i class="fas fa-volume-up"></i>
+                </div>
+                <audio>
+                </audio>
+              </div>
+
+            </div>
+          </section>
+          <section class="main-melody-list__box">
+
+            <ul class="melody-list__box level-zero" data-level="level-zero">
+              <li class="melody-list__item" data-name="level-zero_0">Мой маленький пони</li>
+              <li class="melody-list__item" data-name="level-zero_1">Винкс</li>
+              <li class="melody-list__item" data-name="level-zero_2">Маша и Медведь</li>
+              <li class="melody-list__item" data-name="level-zero_3">Лунтик</li>
+              <li class="melody-list__item" data-name="level-zero_4">Смешарики</li>
+              <li class="melody-list__item" data-name="level-zero_5">Фиксики</li>
+            </ul>
+            <ul class="melody-list__box level-one melody-list__box--disactive" data-level="level-one">
+              <li class="melody-list__item" data-name="level-one_0">Кухня</li>
+              <li class="melody-list__item" data-name="level-one_1">Американская история ужасов</li>
+              <li class="melody-list__item" data-name="level-one_2">Любовь, смерть и роботы</li>
+              <li class="melody-list__item" data-name="level-one_3">Игра престолов</li>
+              <li class="melody-list__item" data-name="level-one_4">Доктор Хаус</li>
+              <li class="melody-list__item" data-name="level-one_5">Сверхъестественное</li>
+            </ul>
+            <ul class="melody-list__box level-two melody-list__box--disactive" data-level="level-two">
+              <li class="melody-list__item" data-name="level-two_0">Секс в большом городе</li>
+              <li class="melody-list__item" data-name="level-two_1">Бандитский Петербург</li>
+              <li class="melody-list__item" data-name="level-two_2">Санта-Барбара</li>
+              <li class="melody-list__item" data-name="level-two_3">Никита</li>
+              <li class="melody-list__item" data-name="level-two_4">Секретные материалы</li>
+              <li class="melody-list__item" data-name="level-two_5">Рабыня Изаура</li>
+            </ul>
+            <ul class="melody-list__box level-three melody-list__box--disactive" data-level="level-three">
+              <li class="melody-list__item" data-name="level-three_0">Любовь и голуби</li>
+              <li class="melody-list__item" data-name="level-three_1">Операция "Ы"</li>
+              <li class="melody-list__item" data-name="level-three_2">Шерлок Холмс и доктор Ватсон</li>
+              <li class="melody-list__item" data-name="level-three_3">Самая обаятельная и привлекательная</li>
+              <li class="melody-list__item" data-name="level-three_4">Вам и не снилось</li>
+              <li class="melody-list__item" data-name="level-three_5">Жестокий романс</li>
+            </ul>
+            <ul class="melody-list__box level-four melody-list__box--disactive" data-level="level-four">
+              <li class="melody-list__item" data-name="level-four_0">Анджелика</li>
+              <li class="melody-list__item" data-name="level-four_1">Фантомас</li>
+              <li class="melody-list__item" data-name="level-four_2">Крёстный отец</li>
+              <li class="melody-list__item" data-name="level-four_3">Укращение строптивого</li>
+              <li class="melody-list__item" data-name="level-four_4">В джазе только девушки</li>
+              <li class="melody-list__item" data-name="level-four_5">Унесённые ветром</li>
+            </ul>
+            <ul class="melody-list__box level-five melody-list__box--disactive" data-level="level-five">
+              <li class="melody-list__item" data-name="level-five_0">Димаш Кудайберген</li>
+              <li class="melody-list__item" data-name="level-five_1">Адель</li>
+              <li class="melody-list__item" data-name="level-five_2">Vangelis</li>
+              <li class="melody-list__item" data-name="level-five_3">Леди Гага</li>
+              <li class="melody-list__item" data-name="level-five_4">Neverlove</li>
+              <li class="melody-list__item" data-name="level-five_5">Алесандро Сафино</li>
+            </ul>
+
+            <div class="melody-list__description">
+              <div class="gide">
+                Послушайте плеер.</br>
+                Выберите правильный ответ из списка.
+              </div>
+              <h2 class="description-title" data-description="title"></h2>
+              <div class="some-melody__media-box description-player hidden-name">
+
+                <div class="player-two ">
+                  <div class="player-control-two">
+                    <i class="fas fa-play play-pause-two"></i>
+                  </div>
+                  <div class="player-range__box-two">
+                    <div class="player-range-two">
+                      <input type="range" />
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <audio class="audio-two"></audio>
+              </div>
+
+              <article class="description-text__flexbox hidden-description" data-description="text">
+                <img class="description-img" data-description="image" alt=""></img>
+                <p class="description-text"></p>
+              </article>
+            </div>
+          </section>
+
+          <section class="button__box">
+            <button class="button" disabled>
+              Следующий уровень
+            </button>
+
+          </section>
+
+        </main>
+      </div>
+      <footer>
+        <div class="center">
+          <div class="rs-logo__box">
+            <div class="footer-text">2022г.</div>
+            <a href="https://github.com/Inna-malina" class="footer-text">githab</a>
+            <a class="rs-logo__link" href="https://rs.school/">
+              <svg href="" class="rs-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 552.8 205.3">
+                <style>
+                  .st0 {
+                    fill: #fff
+                  }
+
+                  .st5,
+                  .st7 {
+                    fill: #000;
+                    stroke: #000;
+                    stroke-width: 4;
+                    stroke-miterlimit: 10
+                  }
+
+                  .st7 {
+                    fill: none
+                  }
+                </style>
+                <path
+                  d="M285.4 68l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z" />
+                <path
+                  d="M133 167.2l24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z" />
+                <path
+                  d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z" />
+                <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+                <ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63" ry="51.8" />
+                <defs>
+                  <ellipse id="SVGID_1_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                    ry="51.8" />
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" overflow="visible" />
+                </clipPath>
+                <g clip-path="url(#SVGID_2_)">
+                  <path transform="rotate(-37.001 420.82 68.353)" class="st0" d="M330.9-14.2h179.8v165.1H330.9z" />
+                  <g id="Layer_2_1_">
+                    <defs>
+                      <path id="SVGID_3_" transform="rotate(-37.001 420.82 68.353)"
+                        d="M330.9-14.2h179.8v165.1H330.9z" />
+                    </defs>
+                    <clipPath id="SVGID_4_">
+                      <use xlink:href="#SVGID_3_" overflow="visible" />
+                    </clipPath>
+                    <g id="Layer_1-2" clip-path="url(#SVGID_4_)">
+                      <ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63"
+                        ry="51.8" />
+                      <defs>
+                        <ellipse id="SVGID_5_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                          ry="51.8" />
+                      </defs>
+                      <clipPath id="SVGID_6_">
+                        <use xlink:href="#SVGID_5_" overflow="visible" />
+                      </clipPath>
+                      <g clip-path="url(#SVGID_6_)">
+                        <path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z" />
+                        <defs>
+                          <path id="SVGID_7_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                        </defs>
+                        <clipPath id="SVGID_8_">
+                          <use xlink:href="#SVGID_7_" overflow="visible" />
+                        </clipPath>
+                        <g clip-path="url(#SVGID_8_)">
+                          <ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63"
+                            ry="51.8" />
+                        </g>
+                        <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" fill="none"
+                          stroke="#000" stroke-width="4" stroke-miterlimit="10" clip-path="url(#SVGID_8_)" />
+                        <ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63"
+                          ry="51.8" />
+                        <path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z" />
+                        <defs>
+                          <path id="SVGID_9_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                        </defs>
+                        <clipPath id="SVGID_10_">
+                          <use xlink:href="#SVGID_9_" overflow="visible" />
+                        </clipPath>
+                        <g clip-path="url(#SVGID_10_)">
+                          <ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63"
+                            ry="51.8" />
+                        </g>
+                        <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" fill="none"
+                          stroke="#000" stroke-width="4" stroke-miterlimit="10" clip-path="url(#SVGID_10_)" />
+                        <path transform="rotate(-37.001 420.82 68.353)" class="st7"
+                          d="M330.9-14.2h179.8v165.1H330.9z" />
+                      </g>
+                      <ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63"
+                        ry="51.8" />
+                      <path
+                        d="M392.4 61.3l10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1l9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+
+    <div class="drop-one__box wrapper-hidden">
+
+      <svg class="drop-one" viewBox="0 0 883 814" preserveAspectRatio="none" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_1_7)">
+          <path
+            d="M833 340C833 452.989 742.931 500.839 647.237 563C583.196 604.6 529.079 764 443.497 764C357.916 764 336.757 650.6 272.716 609C177.022 546.839 50 484.489 50 371.5C50 288.857 145.516 223.071 200.807 164C271.7 88.2603 316.579 30 436.506 30C522.088 30 566.218 138.4 630.259 180C725.953 242.161 833 227.011 833 340Z"
+            fill="url(#paint0_linear_1_7)">
+            <animate attributeName="d" dur="30s" repeatCount="indefinite" values="
+                        M833 340C833 452.989 742.931 500.839 647.237 563C583.196 604.6 529.079 764 443.497 764C357.916 764 336.757 650.6 272.716 609C177.022 546.839 50 484.489 50 371.5C50 288.857 145.516 223.071 200.807 164C271.7 88.2603 316.579 30 436.506 30C522.088 30 566.218 138.4 630.259 180C725.953 242.161 833 227.011 833 340Z;
+                        M827.508 339.222C827.508 460.117 799.125 540.203 695.266 606.714C625.76 651.226 564.54 764 471.655 764C378.771 764 263.671 645.876 194.165 601.364C90.3056 534.854 50 499.706 50 378.81C50 290.385 111.393 285.799 171.402 222.595C248.345 141.555 320.133 30 450.294 30C543.178 30 688.629 30.4275 758.135 74.9388C861.994 141.45 827.508 218.326 827.508 339.222Z;
+                        M833 427.77C833 566.421 652.068 450.887 555.317 527.166C490.569 578.215 445.951 764 359.425 764C272.898 764 320.169 557.354 255.42 506.306C158.669 430.026 122.132 465.797 122.132 327.146C122.132 225.734 9.68397 162.8 65.5858 90.3129C137.262 -2.62859 331.07 44.9095 452.322 44.9095C538.849 44.9095 648.09 4.90493 712.839 55.9536C809.59 132.233 833 289.119 833 427.77Z;
+                        M728.181 465.139C728.181 602.968 779.95 633.28 687.779 709.107C626.095 759.853 466.231 764 383.8 764C301.369 764 347.364 595.175 285.68 544.429C193.509 468.602 50 479.764 50 341.936C50 241.125 115.065 148.068 168.321 76.0108C236.604 -16.3795 449.135 58.9331 564.648 58.9331C647.079 58.9331 743.873 142.369 805.556 193.115C897.727 268.942 728.181 327.311 728.181 465.139Z;
+                        M833 340C833 452.989 742.931 500.839 647.237 563C583.196 604.6 529.079 764 443.497 764C357.916 764 336.757 650.6 272.716 609C177.022 546.839 50 484.489 50 371.5C50 288.857 145.516 223.071 200.807 164C271.7 88.2603 316.579 30 436.506 30C522.088 30 566.218 138.4 630.259 180C725.953 242.161 833 227.011 833 340Z;
+                        " />
+
+          </path>
+        </g>
+        <defs>
+          <filter id="filter0_f_1_7" x="0" y="-20" width="883" height="834" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_1_7" />
+          </filter>
+
+          <linearGradient id="paint0_linear_1_7" x1="194.815" y1="159.705" x2="504.977" y2="638.344"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E7AC86" />
+            <stop offset="1" stop-color="#ED4C6D" stop-opacity="0.92" />
+          </linearGradient>
+
+        </defs>
+      </svg>
+    </div>
+
+    <div class="drop-two__box wrapper-hidden">
+      <svg class="drop-two" viewBox="0 0 529 496" preserveAspectRatio="none" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_1_14)">
+          <path
+            d="M462.698 306.645C462.698 373.291 465.546 413.674 390.748 445.456C352.579 461.674 308.483 408.506 260.839 408.506C198.222 408.506 131.376 472.16 86.9603 445.456C31.354 412.024 30.9994 385.572 30.9994 329.614C30.9994 303.113 25.744 171.577 39.9931 148.86C79.8641 85.2931 156.955 45.9999 260.839 45.9999C295.726 45.9999 323.482 139.818 353.774 148.86C399.762 162.587 435.002 155.74 462.698 184.811C490.495 213.989 462.698 268.699 462.698 306.645Z"
+            fill="url(#paint0_linear_1_14)">
+            <animate attributeName="d" dur="30s" repeatCount="indefinite" values="
+                        M462.698 306.645C462.698 373.291 465.546 413.674 390.748 445.456C352.579 461.674 308.483 408.506 260.839 408.506C198.222 408.506 131.376 472.16 86.9603 445.456C31.354 412.024 30.9994 385.572 30.9994 329.614C30.9994 303.113 25.744 171.577 39.9931 148.86C79.8641 85.2931 156.955 45.9999 260.839 45.9999C295.726 45.9999 323.482 139.818 353.774 148.86C399.762 162.587 435.002 155.74 462.698 184.811C490.495 213.989 462.698 268.699 462.698 306.645Z;
+
+                        M430.738 211.202C430.738 274.845 532.333 297.196 454.896 327.546C415.38 343.033 332.483 436.26 283.158 436.26C218.331 436.26 167.749 393.099 121.765 367.599C64.1967 335.673 39.0001 316.135 39.0001 262.699C39.0001 237.392 101.841 201.426 116.593 179.733C157.871 119.031 79.393 95.8128 186.943 95.8128C223.061 95.8128 290.076 22.3311 321.437 30.9656C369.048 44.0743 351.371 68.0519 380.044 95.8128C408.823 123.676 430.738 174.967 430.738 211.202Z;
+
+                        M385.913 293.58C385.913 343.296 518.868 374.165 459.93 397.873C429.854 409.972 258.884 453 221.342 453C172.002 453 111.456 423.753 76.4576 403.833C32.6416 378.894 30 331.598 30 289.855C30 270.086 35.3079 189.028 46.5357 172.081C77.9528 124.663 40.2705 47 122.128 47C149.618 47 232.907 99.8512 256.776 106.596C293.013 116.837 378.263 114.708 400.086 136.394C421.99 158.16 385.913 265.274 385.913 293.58Z;
+
+                        M441.896 162.859C441.896 235.063 548.672 368.614 470.202 403.046C430.159 420.617 377.607 464.716 327.624 464.716C261.933 464.716 142.531 469.845 95.9348 440.914C37.5982 404.694 57.1452 396.592 57.1452 335.967C57.1452 307.256 91.4698 256.714 106.419 232.102C148.247 163.234 13.1592 74.1414 122.144 74.1414C158.744 74.1414 224.556 89.2295 256.335 99.0257C304.581 113.898 359.374 35.0723 388.429 66.5678C417.592 98.1791 441.896 121.749 441.896 162.859Z;
+
+                        M462.698 306.645C462.698 373.291 465.546 413.674 390.748 445.456C352.579 461.674 308.483 408.506 260.839 408.506C198.222 408.506 131.376 472.16 86.9603 445.456C31.354 412.024 30.9994 385.572 30.9994 329.614C30.9994 303.113 25.744 171.577 39.9931 148.86C79.8641 85.2931 156.955 45.9999 260.839 45.9999C295.726 45.9999 323.482 139.818 353.774 148.86C399.762 162.587 435.002 155.74 462.698 184.811C490.495 213.989 462.698 268.699 462.698 306.645Z;
+                        " />
+
+          </path>
+        </g>
+        <defs>
+          <filter id="filter0_f_1_14" x="0.0523071" y="15.9999" width="505" height="466" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_1_14" />
+          </filter>
+
+          <linearGradient id="paint0_linear_1_14" x1="470.692" y1="253.717" x2="286.907" y2="116.786"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.00547945" stop-color="#FB6E58" />
+            <stop offset="1" stop-color="#F5AE6A" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+    </div>
+    <audio class="win" src="./assets/media/win.mp3"></audio>
+    <audio class="wrong" src="./assets/media/wrong.mp3"></audio>
+  </div>
+  <script type="module" src="./js/audio-mix.js"></script>
+  <script src="https://kit.fontawesome.com/4074b6dd70.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

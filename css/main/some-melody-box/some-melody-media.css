@@ -1,0 +1,123 @@
+@import './some-melody-box.css';
+.some-melody__media-box{
+  margin: 10px 0px 0px 0px;
+}
+
+.player {
+  min-height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.player-range__box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.player-range__box .player-range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.player-range__box .player-range div {
+  min-width: 100%;
+  min-height: 3px;
+  background-color: #67abf3;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.player-range__box input {
+  width: 100%;
+  max-height: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background: #ff9966;
+  z-index: 0;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.player-range__box input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff9966;
+  cursor: pointer;
+}
+
+.timer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+
+}
+
+.timer__box span {
+  display: block;
+  color: #67abf3;
+}
+
+.player-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-control i {
+  cursor: pointer;
+  margin: 0px 20px 0px 0px;
+  font-size: 25px;
+  color: #67abf3;
+}
+
+
+/* ------------sound-control-------------- */
+.sound-control {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.sound-control i, .sound-control input{
+  display: block;
+  color:#67abf3;
+}
+
+.sound-control input {
+  flex-grow: 1;
+  margin: 0 0.5rem;
+  max-height: 2px;
+  cursor: pointer;
+  appearance: none;
+  background: #67abf3;
+  border-radius: 8px;
+  outline: none;
+}
+
+.sound-control input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #67abf3;
+  cursor: pointer;
+}
+

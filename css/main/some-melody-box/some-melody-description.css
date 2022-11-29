@@ -1,0 +1,73 @@
+@import './some-melody-box.css';
+
+.some-melody__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+.some-melody__description>*:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.some-melody__level-name {
+  text-align: right;
+}
+
+.some-melody__hidden {
+  font-size: 16px;
+}
+
+.hidden-name {
+  display: none;
+}
+
+
+.description-title {
+  font-size: 16px;
+  margin: 0px 0px 16px 0px;
+}
+
+.hidden-description {
+  display: none;
+}
+
+.visible-description {
+  display: flex;
+}
+
+@media (max-width: 430px) {
+  .visible-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .some-melody__level-name {
+    text-align: left;
+  }
+
+  .some-melody__description {
+    width: 100%;
+  }
+}
+
+.description-text__flexbox {
+  justify-content: center;
+  gap: 20px;
+}
+
+.description-img {
+  display: block;
+  width: 138px;
+  height: 106px;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.description-text {}
